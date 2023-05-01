@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+
+    background-image: linear-gradient(rgb(81, 177, 241), white, rgb(81, 177, 241));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo1{
+position: absolute;
+width: 118px;
+height: 81px;
+left: 271px;
+top: 18px;
+}
+
+.personagem{
+position: absolute;
+width: 313px;
+height: 247px;
+left: 39px;
+top: 68px;
+}
+
+#confirmapersonagem{
+
+}
+
+
+#setadireita{
+    position: absolute;
+    width: 220px;
+    height: 75px;
+    left: 220px;
+    top: 324px;
+    object-fit:contain;
+
+
+}
+
+#nomepersonagem{
+display: default;
+position: absolute;
+width: 164px;
+height: 41px;
+left: 115px;
+top: 338px;
+
+font-family: 'Tufuli Arabic DEMO';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 53px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(111, 214, 54, 0.91);
+
+border: 0.3px solid rgba(253, 255, 158, 0.47);
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+#botaoflora{
+    position: absolute;
+width: 256.05px;
+height: 71.21px;
+left: 31px;
+top: 453px;
+}
+
+#botaocaca{
+position: absolute;
+width: 248.12px;
+height: 72px;
+left: 111px;
+top: 524px;
+}
+
+#botaozeca{
+    position: absolute;
+    width: 256.05px;
+    height: 71.21px;
+    left: 31px;
+    top: 596px;     
+}
+#botaovanvan{
+position: absolute;
+width: 248.12px;
+height: 73px;
+left: 111px;
+top: 667px;
+}
+#botaoneco{
+position: absolute;
+width: 256.05px;
+height: 71.21px;
+left: 31px;
+top: 739px;
+}
+
+
