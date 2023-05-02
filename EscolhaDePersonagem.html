@@ -9,9 +9,14 @@
 </head>
 <body>
 <script src="assets/escolhepersonagem.js"></script>
+<div id="containerPersonagem"></div>
 <section id="section1">
     <img class="logo1" src="assets/imgs/logo.png"/>
-    <img class="personagem" src="assets/imgs/flora.png"/>
+    <img id="flora"class="personagem" src="assets/imgs/flora.png"/>
+    <img id="cacá"class="personagem" src="assets/imgs/cacá.png"/>
+    <img id="zeca"class="personagem" src="assets/imgs/zeca.png"/>
+    <img id="vanvan"class="personagem" src="assets/imgs/vanvan.png"/>
+    <img id="neco"class="personagem" src="assets/imgs/neco.png"/>
     <button id="confirmapersonagem">
     <h2 id="nomepersonagem">FLORA</h2> <img id="setadireita" src="assets/imgs/setadireita.png"/>
     </button>
@@ -19,11 +24,11 @@
 
 
 <section id="section2">
-    <button class="botoespersonagem"id="botaoflora"><img src="assets/imgs/florabotao.png"/></button>
-    <button class="botoespersonagem"id="botaocaca"><img src="assets/imgs/cacábotao.png"/></button>
-    <button class="botoespersonagem"id="botaozeca"><img src="assets/imgs/zecabotao.png"/></button>
-    <button class="botoespersonagem"id="botaovanvan"><img src="assets/imgs/vanvanbotao.png"/></button>
-    <button class="botoespersonagem"id="botaoneco"><img src="assets/imgs/necobotao.png"/></button>
+    <button onclick="alternarFlora()"class="botoespersonagem"id="botaoflora"><img src="assets/imgs/florabotao.png"/></button>
+    <button onclick="alternarCacá()"class="botoespersonagem"id="botaocaca"><img src="assets/imgs/cacábotao.png"/></button>
+    <button onclick="alternarZeca()" class="botoespersonagem"id="botaozeca"><img src="assets/imgs/zecabotao.png"/></button>
+    <button onclick="alternarVanvan()" class="botoespersonagem"id="botaovanvan"><img src="assets/imgs/vanvanbotao.png"/></button>
+    <button onclick="alternarNeco()" class="botoespersonagem"id="botaoneco"><img src="assets/imgs/necobotao.png"/></button>
 </section>
 </body>
 </html>

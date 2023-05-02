@@ -1,18 +1,18 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
-body{
+
+body, html{
 
     background-image: linear-gradient(rgb(81, 177, 241), white, rgb(81, 177, 241));
-    width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-   
+    width: 100vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .logo1{
@@ -31,9 +31,23 @@ left: 39px;
 top: 68px;
 }
 
-#confirmapersonagem{
-
+#flora{
+    display:default;
 }
+
+#cacá{
+    display:none;
+}
+#zeca{
+    display:none;
+}
+#vanvan{
+    display:none;
+}
+#neco{
+    display:none;
+}
+
 
 
 #setadireita{
@@ -43,12 +57,9 @@ top: 68px;
     left: 220px;
     top: 324px;
     object-fit:contain;
-
-
 }
 
 #nomepersonagem{
-display: default;
 position: absolute;
 width: 164px;
 height: 41px;
@@ -70,9 +81,13 @@ border: 0.3px solid rgba(253, 255, 158, 0.47);
 text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
+.botoespersonagem{
+    width: 256.05px;
+height: 71.21px;
+}
 
 #botaoflora{
-    position: absolute;
+position: absolute;
 width: 256.05px;
 height: 71.21px;
 left: 31px;
