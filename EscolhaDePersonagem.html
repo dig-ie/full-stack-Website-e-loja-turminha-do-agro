@@ -8,27 +8,28 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
 <body>
-<script src="assets/escolhepersonagem.js"></script>
 <div id="containerPersonagem"></div>
-<section id="section1">
-    <img class="logo1" src="assets/imgs/logo.png"/>
+<img class="logo1" src="assets/imgs/logo.png"/>
+<div id="section1">
+   
     <img id="flora"class="personagem" src="assets/imgs/flora.png"/>
-    <img id="cacá"class="personagem" src="assets/imgs/cacá.png"/>
+    <img id="caca"class="personagem" src="assets/imgs/cacá.png"/>
     <img id="zeca"class="personagem" src="assets/imgs/zeca.png"/>
     <img id="vanvan"class="personagem" src="assets/imgs/vanvan.png"/>
     <img id="neco"class="personagem" src="assets/imgs/neco.png"/>
     <button id="confirmapersonagem">
     <h2 id="nomepersonagem">FLORA</h2> <img id="setadireita" src="assets/imgs/setadireita.png"/>
     </button>
-</section>
+</div>
 
 
 <section id="section2">
-    <button onclick="alternarFlora()"class="botoespersonagem"id="botaoflora"><img src="assets/imgs/florabotao.png"/></button>
-    <button onclick="alternarCacá()"class="botoespersonagem"id="botaocaca"><img src="assets/imgs/cacábotao.png"/></button>
-    <button onclick="alternarZeca()" class="botoespersonagem"id="botaozeca"><img src="assets/imgs/zecabotao.png"/></button>
-    <button onclick="alternarVanvan()" class="botoespersonagem"id="botaovanvan"><img src="assets/imgs/vanvanbotao.png"/></button>
-    <button onclick="alternarNeco()" class="botoespersonagem"id="botaoneco"><img src="assets/imgs/necobotao.png"/></button>
+    <button onclick="alternarPersonagem(flora)"class="botoespersonagem"id="botaoflora"><img src="assets/imgs/florabotao.png"/></button>
+    <button onclick="alternarPersonagem(caca)"class="botoespersonagem"id="botaocaca"><img src="assets/imgs/cacábotao.png"/></button>
+    <button onclick="alternarPersonagem(zeca)" class="botoespersonagem"id="botaozeca"><img src="assets/imgs/zecabotao.png"/></button>
+    <button onclick="alternarPersonagem(vanvan)" class="botoespersonagem"id="botaovanvan"><img src="assets/imgs/vanvanbotao.png"/></button>
+    <button onclick="alternarPersonagem(neco)" class="botoespersonagem"id="botaoneco"><img src="assets/imgs/necobotao.png"/></button>
 </section>
+<script src="assets/escolhepersonagem.js"></script>
 </body>
 </html>
