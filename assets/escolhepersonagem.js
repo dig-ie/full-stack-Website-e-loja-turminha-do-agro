@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function alternarPersonagem (personagem){
 //função que desativa display de todos os personagens e ativa o do personagem escolhido
 var lista = document.querySelectorAll('.personagem');
@@ -48,14 +47,3 @@ switch (personagem){
 
 
 
-=======
-var listaPersonagens = document.querySelectorAll("#section1 img");
-
-console.log(listaPersonagens[3].src);
-
-
-function alternaPersonagem (personagem){
-
-
-}
->>>>>>> 2dcd9900710a452dd55c8418ff05ae0174915061
