@@ -1,49 +1,49 @@
-var principal = document.getElementsById("section2")[0]; // div principal
-var lista = principal.getElementsByTagName("button"); // pega os itens da lista
-
-//AINDA NÃO ESTÁ FUNCIONANDO - TÔ NO PROCESSO ------------------
-//AINDA NÃO ESTÁ FUNCIONANDO - TÔ NO PROCESSO ------------------
-function alternarCacá (){
-
-    getElementsById(cacá).style.display="default";
-    getElementsById(flora).style.display="none";
-    getElementsById(zeca).style.display="none";
-    getElementsById(vanvan).style.display="none";
-    getElementsById(neco).style.display="none";
+function alternarPersonagem (personagem){
+//função que desativa display de todos os personagens e ativa o do personagem escolhido
+var lista = document.querySelectorAll('.personagem');
+console.log(lista);
+switch (personagem){
+    case 'img#flora.personagem': 
+    lista[0].style.display = 'initial';
+    lista[1].style.display = 'none';
+    lista[2].style.display = 'none';
+    lista[3].style.display = 'none';
+    lista[4].style.display = 'none';
+    break;
+    case 'img#caca.personagem': 
+    lista[0].style.display = 'none';
+    lista[1].style.display = 'initial';
+    lista[2].style.display = 'none';
+    lista[3].style.display = 'none';
+    lista[4].style.display = 'none';
+    break;
+    case 'img#zeca.personagem':
+    lista[0].style.display = 'none';
+    lista[1].style.display = 'none';
+    lista[2].style.display = 'initial';
+    lista[3].style.display = 'none';
+    lista[4].style.display = 'none';
+    break;
+    case 'img#vanvan.personagem':
+    lista[0].style.display = 'none';
+    lista[1].style.display = 'none';
+    lista[2].style.display = 'none';
+    lista[3].style.display = 'initial';
+    lista[4].style.display = 'none';
+    case 'img#neco.personagem':
+        lista[0].style.display = 'none';
+        lista[1].style.display = 'none';
+        lista[2].style.display = 'none';
+        lista[3].style.display = 'none';
+        lista[4].style.display = 'initial';
+        break;
+}
 }
 
-function alternarFlora (){
 
-    getElementsById(cacá).style.display="none";
-    getElementsById(flora).style.display="default";
-    getElementsById(zeca).style.display="none";
-    getElementsById(vanvan).style.display="none";
-    getElementsById(neco).style.display="none";
-}
 
-function alternarZeca (){
 
-    getElementsById(cacá).style.display="none";
-    getElementsById(flora).style.display="none";
-    getElementsById(zeca).style.display="default";
-    getElementsById(vanvan).style.display="none";
-    getElementsById(neco).style.display="none";
-}
 
-function alternarVanvan (){
 
-    getElementsById(cacá).style.display="none";
-    getElementsById(flora).style.display="none";
-    getElementsById(zeca).style.display="none";
-    getElementsById(vanvan).style.display="default";
-    getElementsById(neco).style.display="none";
-}
 
-function alternarNeco (){
 
-    getElementsById(cacá).style.display="none";
-    getElementsById(flora).style.display="none";
-    getElementsById(zeca).style.display="none";
-    getElementsById(vanvan).style.display="none";
-    getElementsById(neco).style.display="default";
-}
