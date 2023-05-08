@@ -18,6 +18,11 @@ body, html{
     justify-content: center; 
     align-items: center;
     position: absolute;
+    
+}
+
+body{
+    max-width:none;
 }
 
 
@@ -30,24 +35,20 @@ button {
 width:100%;
 }
 #cabecalho{
-    width:100%;
+height: 100px;
+width: 466px;
 }
 #cabecalhoimg{
-
 position: absolute;
-width: 400px;
-height: 163px;
-left: -38px;
+height: 130px;
 top: -37px;
-
-
+width:100%;
 }
 #navbarimg{
 position: absolute;
-width: 400px;
 height: 139px;
-left: -38px;
 top: 48px;
+width:100%;
 }
 .personagem{
 position: absolute;
