@@ -2,34 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     
 }
+
 
 body, html{
 
     background-image: linear-gradient(rgb(81, 177, 241), white, rgb(81, 177, 241));
     height: 100vh;
-    width: 100vw;
-    display: flex; 
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
+    position: absolute;
 }
 
-.logo1{
+
+button {
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
+#section1{
+width:100%;
+}
+#cabecalho{
+    width:100%;
+}
+#cabecalhoimg{
+
 position: absolute;
-width: 118px;
-height: 81px;
-left: 271px;
-top: 18px;
-}
+width: 400px;
+height: 163px;
+left: -38px;
+top: -37px;
 
+
+}
+#navbarimg{
+position: absolute;
+width: 400px;
+height: 139px;
+left: -38px;
+top: 48px;
+}
 .personagem{
 position: absolute;
-width: 313px;
-height: 247px;
-left: 39px;
-top: 68px;
+width: 277px;
+height: 325px;
+left: 25px;
+top: 160px;
 }
+
+
 
 #flora{
     display:default;
@@ -47,44 +75,16 @@ top: 68px;
     display:none;
 }
 
-
-
-
-#setadireita{
-    position: absolute;
-    width: 220px;
-    height: 75px;
-    left: 220px;
-    top: 324px;
-    object-fit:contain;
+.imgbotao{
+width: 256.05px;
+height: 71.21px;
 }
 
-#nomepersonagem{
-position: absolute;
-width: 164px;
-height: 41px;
-left: 115px;
-top: 338px;
 
-font-family: 'Tufuli Arabic DEMO';
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 53px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: rgba(111, 214, 54, 0.91);
-
-border: 0.3px solid rgba(253, 255, 158, 0.47);
-text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
-}
 
 .botoespersonagem{
-    width: 256.05px;
-height: 71.21px;
-border: 0;
+width: 100.05px;
+height: 31.21px;
 }
 
 #botaoflora{
@@ -92,37 +92,37 @@ position: absolute;
 width: 256.05px;
 height: 71.21px;
 left: 31px;
-top: 453px;
+top: 483px;
 }
 
 #botaocaca{
 position: absolute;
-width: 248.12px;
-height: 72px;
-left: 111px;
-top: 524px;
+width: 308px;
+height: 70.79px;
+left: 31px;
+top: 553px;
 }
 
 #botaozeca{
-    position: absolute;
-    width: 256.05px;
-    height: 71.21px;
-    left: 31px;
-    top: 596px;     
+position: absolute;
+width: 310px;
+height: 70.71px;
+left: 31px;
+top: 624px;    
 }
 #botaovanvan{
 position: absolute;
-width: 248.12px;
-height: 73px;
-left: 111px;
-top: 667px;
+width: 312.4px;
+height: 71.79px;
+left: 31px;
+top: 694px;
 }
 #botaoneco{
 position: absolute;
-width: 256.05px;
+width: 305px;
 height: 71.21px;
 left: 31px;
-top: 739px;
+top: 764px;
 }
 
 

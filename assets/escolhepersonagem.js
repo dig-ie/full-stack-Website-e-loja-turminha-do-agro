@@ -1,3 +1,7 @@
+//armazenar personagem escolhido atualmente pelo usuário
+var personagemEscolhido = '';
+
+//alterna o personagem na seleção de personagens
 function alternarPersonagem (personagem){
 //função que desativa display de todos os personagens e ativa o do personagem escolhido
 var lista = document.querySelectorAll('.personagem');
