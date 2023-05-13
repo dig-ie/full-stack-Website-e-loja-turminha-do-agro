@@ -1,12 +1,12 @@
 
-###Turminha Agro
+### Turminha Agro
 A Turminha do Agro é o principal produto da Mulungu Studio e consiste em uma plataforma educativa gamificada com diversos conteúdos sobre o setor rural. Todos os conteúdos são abordados por meio de desenhos animados, quadrinhos, desafios, curiosidades e jogos digitais educativos. Tudo isso de forma lúdica e educativa, fazendo a criança escolher seu personagem, interagir na plataforma e ir aprendendo a cada nível que ela vai evoluindo.
 
 
 <br>
 <br>
 
-###Projeto Fullstack para Turminha do Agro
+### Projeto Fullstack para Turminha do Agro
 O objetivo do projeto é desenvolver um site educativo para crianças, que apresenta a importância do agro e cultivo de plantações. O site será uma plataforma interativa que integrará vídeos, jogos, loja e podcasts para despertar o interesse das crianças e jovens em aprender sobre o assunto.
 
 <br>
