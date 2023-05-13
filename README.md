@@ -27,11 +27,13 @@ O objetivo do projeto é desenvolver um site educativo para crianças, que apres
 - Responsividade e adaptação de aplicação web para front.
 
 <br>
+
 ### Backend
 - c# 
 - Arquitetura MVC**
 - MySQL (para construção do banco de dados)
 - Express (para integração do código através do protocolo HTTP)
+
 <br>
 <br>
 
@@ -43,6 +45,7 @@ Estudar e revisar
 
 
 <br>
+
 ### Limites do escopo 
 
 <EP01> Documente os limites do escopo do projeto descrevendo itens, características, situações e funções que são já conhecidamente excluídas do escopo do projeto. O objetivo deste item é “blindar” o escopo do projeto, prevenindo o refluxo por demandas não previstas.
