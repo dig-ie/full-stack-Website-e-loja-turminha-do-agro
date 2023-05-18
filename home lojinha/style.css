@@ -1,0 +1,758 @@
+body{
+   margin: 0;
+   overflow-x: hidden;
+}
+/* ---estilizando header---*/
+
+#header{
+   position: fixed; 
+   top: 0px;
+    z-index: 10;
+}
+#topo1{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #2D6A2E;
+    height: 10vh;
+}
+
+input#pesquisa{
+    width:23vw;
+    height: 5vh;
+    margin-left: 17vw;
+    border: none;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18.75px;
+    color: rgba(0, 0, 0, 0.41);
+    padding-left: 20px;
+}
+
+input#pesquisa:focus{
+    outline-color: gray;
+}
+button#pesquisaIcon{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    top: 2.9vh;
+    left: 38vw;
+}
+
+p#fraseloja{
+    position: absolute;
+    width: 106px;
+    height: 37px;
+    margin-left: 50vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+div#login{
+    display: flex;
+    position: absolute;
+    width: 160px;
+    height: 37px;
+    left: 65vw;
+   
+}
+
+a#entrecadastre-se{
+    position: absolute;
+    width: 126px;
+    left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+img#usericon{
+    position: absolute;
+    top: 0.8vh;
+    left:1.5vw
+}
+
+div#sacola{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    left: 80vw;
+    width: 58px;
+    height: 49px;
+ 
+}
+
+#sacola img{
+    cursor: pointer;
+    position: absolute;
+    height: 49px;
+    left: 12px;
+}
+div#contador{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    background: rgba(235, 232, 219, 0.91);;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    left:33px;
+    top: 2px;
+    color: #A8861A;
+}
+
+div#topo2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #61B134;
+    opacity: 0.9;
+    height: 8vh;
+}
+
+nav#menu{
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin-left: 8vw;
+
+}
+
+a.txtbranco{
+    margin: 45px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+a.txtbranco:hover{
+    color: #2D6A2E;
+
+}
+
+a#estiloDeBrincar{
+    margin: 45px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2D6A2E;
+}
+
+img#logo{
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    top: 3px;
+    left: 45px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+#lista{
+    background-color:#61B134;
+    height: 2px;
+}
+/* --- FIM header---*/
+
+/* ---estilizando primeiro carrosel---*/
+
+div#carrosel{
+   margin-top: 18vh;
+   width: 100vw;
+   height: 40vh;
+   overflow: hidden;
+
+}
+
+div#slides{
+    width: 400%;
+    height: 40vh;
+    display: flex;
+}
+
+.slide{
+  float: left;
+    width: 25%;
+    height: 40vh;
+    transition: 2ms;
+}
+
+div#slides input{
+    display: none;
+}
+
+div#primeiroSlide{
+    width: 100%;
+}
+div#slides img{
+    width: inherit;
+}
+
+div#navegacaoManual{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+.botaoManual{
+    border: 2px solid #2D6A2E;;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    transition: 1s;
+}
+
+.botaoManual:hover{
+background-color: #2D6A2E;
+}
+
+#radio1:checked ~ #primeiroSlide{
+    margin: 0;
+}
+
+#radio2:checked ~ #primeiroSlide{
+    margin-left: -25%; 
+}
+
+#radio3:checked ~ #primeiroSlide{
+    margin-left: -50%; 
+}
+
+#radio4:checked ~ #primeiroSlide{
+    margin-left: -75%; 
+}
+
+#navegacaoAutomatica div{
+    border: 2px solid #2D6A2E;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#navegacaoAutomatica {
+    position: absolute;
+    width: 100vw;
+    margin-top: 43vh;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+#navegacaoAutomatica div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ #navegacaoAutomatica #botaoAutomatico1{
+    background-color:#2D6A2E ;
+}
+
+#radio2:checked ~ #navegacaoAutomatica #botaoAutomatico2{
+    background-color:#2D6A2E ;
+}
+
+#radio3:checked ~ #navegacaoAutomatica #botaoAutomatico3{
+    background-color:#2D6A2E ;
+}
+
+#radio4:checked ~ #navegacaoAutomatica #botaoAutomatico4{
+    background-color:#2D6A2E ;
+}
+
+.proximoEsquerdo{
+    position: absolute;
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none; 
+    margin-left: 9vw;
+    margin-top: -23vh;
+}
+
+.proximoEsquerdo img{
+    height: 20px;
+}
+
+.proximoDireito{
+    position: absolute;
+    display: flex;
+    width: 6vh;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none; 
+    margin-left: 91vw;
+    margin-top: -23vh;
+    
+}
+
+.proximoDireito img{
+    height: 20px;
+}
+/* -- FIM CARROSEL--*/
+
+.destaques{
+    position: absolute;
+    display: inline-block;
+    left:39vw;
+    align-self: center;
+    top: 70vh;
+}
+
+/* -- Estilizando produtos e carrosel--*/
+
+.carroselProdutos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70vh;
+  }
+  
+  .containerSlider {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    margin-top: -39vh;
+    width: 100%;
+    margin-left: 3.5vw;
+    background-color: transparent;
+    align-items: center;
+  }
+  
+  .slider {
+    position: absolute;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+  
+  
+  .slide {
+    display: flex;
+    width: 200%;
+  }
+  
+  .produto {
+    cursor: pointer;
+    flex: 0 0 calc(25% - 1.5vw);
+    margin-right: 1.5vw;
+    scroll-snap-align: start;
+  }
+  
+  .proximoEsquerdoP {
+    position: absolute;
+    margin-top: -2vh;
+    z-index: 8;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .proximoEsquerdoP img {
+    height: 30px;
+  }
+  
+  .proximoDireitoP {
+    position: absolute;
+    margin-left: 91vw;
+    margin-top: -42vh;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .proximoDireitoP img {
+    height: 30px;
+  }
+  
+  div.moldura {
+    height: 35vh;
+    width: 20vw;
+    border: 3px solid #A8861A;
+    border-radius: 10px;
+  }
+
+  div.moldura img{
+   width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  button.adcSacola {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: #E0B916;
+    width: 13vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    margin-top: 29vh;
+    margin-left: -19vw;
+    font-family: system-ui, --, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+   
+  }
+  
+  button.detalhesProduto {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 3vw;
+    height: 5vh;
+    margin-left: -4.5vw;
+    margin-top: 29vh;
+    background-color: #C69F13;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button.adcSacola:hover {
+    background-color: rgba(97, 177, 52, 0.9);
+  }
+  
+  button.detalhesProduto:hover {
+    background-color: rgba(97, 177, 52, 0.9);
+  }
+  
+  div.estrelas {
+    margin-top: 10px;
+    margin-left: 38%;
+    display: inline-block;
+    background-color: #A8861A;
+  }
+  
+  p.nomeProduto {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  p.preco {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 8px;
+    color: #2D6A2E;
+    margin-left: 85px;
+  }
+  
+  .destaquePopular{
+    position: absolute;
+    display: inline-block;
+    left:39vw;
+    align-self: center;
+    top: 145vh;
+}
+
+/* -- Estilizando container categorias hover--*/
+
+div.containerCategorias{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 30vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+img#bonecaHover{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 36vw;
+    height: 43px;
+    z-index: 10;
+}
+
+div.categorias{
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content:flex-end;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 7vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+div.categorias img{
+    padding: 1vh;
+}
+
+div.categorias:hover {
+    background-color: #E0B916;
+    color: #F7F7F7;
+}
+
+div#artigosParaFesta{
+   
+    margin-top: 4vh;
+    margin-left: 1.5vw;
+    
+}
+
+div#brinquedos{
+    margin-top: 4vh;
+    margin-left: 18vw;
+}
+
+div#casaDecoracao{
+    margin-top: 17vh;
+    margin-left: 1.5vw;
+}
+
+div#livrosDvd{
+    margin-top: 17vh;
+    margin-left: 18vw;
+}
+
+img#bonecaHover2{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 52vw;
+    height: 43px;
+    z-index: 10;
+}
+
+div.containerPorIdade{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 50vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.idade{
+    cursor: pointer;
+    margin-left: 1.5vw;
+    margin-top:2vh;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 6vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.idade:hover{
+    background-color:#E0B916;
+    color: #F7F7F7;
+}
+
+
+img#bonecaHover3{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 80vw;
+    height: 43px;
+    z-index: 10;
+}
+
+div.containerEstiloBrincar{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 50vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.deBrincar{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 1.5vw;
+    margin-top:2vh;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 6vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.deBrincar:hover{
+    background-color: #E0B916;
+    color: #F7F7F7;
+}
+
+
+/* -- Estilizando container categorias hover--*/
+
+
+.redesSociais{
+    display: inline-block;
+    width: 30vw;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.redesSociais img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    height: 12vh;
+}
+
+.redesSociais img:hover{
+    transition: 0.5s;
+    height: 12vh;
+}
+
+.videos{
+    margin-right: 5vw;
+    display: inline-flex;
+    width: 25vw; 
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+    
+}
+
+iframe{
+    
+    margin-left: -22.2vw;
+    width: 19.8vw;
+    height: 27.3vh;
+    margin-top: 4.6vh;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#site{ 
+    top: 275vh;
+    left: 35vw;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #2F6B35;
+}
+
+/* -- Estilizando footer--*/
+.rodaPe{
+    height: 26vh;
+    background-color: #2D6A2E;
+}
+
+.linkRodape{
+    display: inline-block;
+    margin-top: 1.5vh;
+    margin-left: 6vw;
+    width: 10vw;
+    height: 24.5vh;
+}
+
+.linkRodape p{
+width: 16vw;
+height: 1vh;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+
+color: #FFFFFF;
+}
+
+.linkRodape a{
+text-decoration: none;
+margin-top: 2vh;
+display: inline-block;
+width: 17vw;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #FFFFFF;
+}
+
+#contatos{ 
+    display: block;
+    margin-left: 46vw;
+    height: 15vh;
+    width: 37vh;
+    margin-top: -19vh; 
+}
+
+#contatos p {
+    position: relative;
+    top: -6.5vh;
+    width: 17vw;
+    display: block;
+    margin-left: 4vw;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
