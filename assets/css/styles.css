@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header{
+    width:100%;
+    height:100px;
+    background-image: url("../img/partesuperiorbase1.png");
+    background-position: center;
+    background-size:1000px;
+    margin:0px;
+    border:0px;
+    padding:0;
+    
+}
+
+body{
+    background-image: url("../img/Fundo.jpg");
+    background-size: cover;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+
+.cntro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloqueado {
+    float: left;
+    margin-right: 10px;
+}
+
+.responsivo{
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 150px;
+}
+
