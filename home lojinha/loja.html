@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Home loja</title>
+</head>
+<body>
+
+    <header id="header">
+
+        <div id="topo1">
+
+                <div id="containerInput">
+                    <input type="text" id="pesquisa" name="barra de pesquisa" placeholder="O que voce ta buscando">
+                    <button id="pesquisaIcon"><img src="imagens/IconePesquisa.svg" alt=""></button>
+                </div>
+
+                <p id="fraseloja">Loja Oficial Verificada</p>
+
+                <div id="menuMobile"><img src="imagens/Icone-menu.png" alt=""></div>
+
+                <div id="login"> <img src="imagens/Icone-usuario.svg" alt="Icone usuario" id="usericon"> <a href="" id="entrecadastre-se">Opa! Entre ou cadastre-se</a> </div>
+                           
+                <div id="sacola"><img src="imagens/Icone-sacola.png" alt=""> <div id="contador">0</div> </div>
+        </div>
+
+        <div id="topo2">
+
+            <div id="containerInputMobile">
+            <input type="text" id="pesquisaMobile" name="barradepesquisa" placeholder="busca">
+            <button> <img src="imagens/IconePesquisa.svg" alt=""></button> 
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li> <a href="#" class="txtbranco">Promocoes</a> </li> 
+                    <li> <a href="#" class="txtbranco" id="comprePorCategoria">Compre por Categoria</a> </li>  
+                    <li> <a href="#" class="txtbranco" id="porIdade">Por idade</a> </li>
+                    <li> <a href="#" class="txtbranco">Lancamentos</a> </li>
+                    <li> <a href="#" id="estiloDeBrincar">Estilo de Brincar</a> </li>
+                </ul>
+            </nav>
+        </div>   
+        
+       <div class="logo"> <img id="logo" src="imagens/Logo.png" alt=""> </div>
+        <div id="li"></div>
+
+    </header>
+
+    <div class="sliderImagens">
+
+        <div class="slidesImagens">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slideImg first">
+                <img src="imagens/carroselFones.png" alt="Image 1">
+            </div>
+            <div class="slideImg">
+                <img src="imagens/carroselFiguras.png" alt="Image 2">
+            </div>
+            <div class="slideImg">
+                <img src="imagens/TesteCarrose1.png" alt="Image 3">
+            </div>
+            <div class="slideImg">
+                <img src="imagens/testeCarrosel2.png" alt="Image 4">
+            </div>
+
+            <div class="navegacao">
+                <label for="radio1" class="botaoNavegacao1"> </label> 
+                <label for="radio2" class="botaoNavegacao2"> </label> 
+                <label for="radio3" class="botaoNavegacao3"> </label> 
+                <label for="radio4" class="botaoNavegacao4"> </label> 
+           </div>
+
+        </div>
+
+    </div>
+
+    <div  class="destaques"><img  height="80vh"" src="imagens/imgPromocoes.png" alt=""></div>
+
+    <!-- comecancdo carrosel produto-->
+    <div class="carroselProdutos">
+    
+        <div class="containerSlider">
+
+            <button class="botaoVoltarProdutos"> <img src="imagens/Icone-voltar.svg" alt=""></button>
+
+            <div class="slide"></div>
+            <div class="slider">
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/bannerLogo.png" alt=""> 
+                            <button class="adcSacola">Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Banner com Logo</p>
+                                <p class="preco">R$ 100,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraCaca.png" alt="figura da personagem caca"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Caca</p>
+                                <p class="preco">R$ 25,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraFlora.png" alt="figura personagem Flora"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Flora</p>
+                                <p class="preco">R$ 25,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraNeco.png" alt="figura personagem Neco"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Neco</p>
+                                <p class="preco">R$ 25,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraVanvan.png" alt=" figura personagem Vanvan"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Vanvan</p>
+                                <p class="preco">R$ 25,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraZeca.png" alt="figura personagem Zeca"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Zeca</p>
+                                <p class="preco">R$ 150,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/confetesCarnaval.png" alt="confetes dos personagens"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto"> 1Kg Confetes da Turminha </p>
+                                <p class="preco">R$ 30,00</p>        
+                </div>
+
+                <div class="produto" id="p1">
+                    <div class="moldura" id="m1"> 
+                        <img src="imagens/figuraTurmaCompeta.png" alt=" figura turminha Completa"> 
+                            <button class="adcSacola"> Adicionar a sacola</button> 
+                                <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                    </div>
+                        <div class="estrelas">estrelas</div>
+                            <p class="nomeProduto">Figura Turminha Completa</p>
+                                <p class="preco">R$ 25,00</p>        
+                </div>
+            </div>
+            </div>
+            <button class="botaoPassarProdutos"> <img src="imagens/Icone-proximo.svg" alt=""></button>
+        </div>
+    </div>
+ <!-- Fim carrosel produto-->
+
+  <!-- destaque produto popular-->
+    <div  class="destaques"><img  height="80vh"" src="imagens/imgPopulares.png" alt="imagem de destaque com o nome populares"></div>
+ <!-- fim destaque produto popular-->
+
+ 
+ <!-- comecancdo carrosel produtoPopular-->
+  <div class="carroselProdutos">
+    
+    <div class="containerSlider">
+
+        <button class="botaoVoltarProdutos"> <img src="imagens/Icone-voltar.svg" alt=""></button>
+
+        <div class="slide"></div>
+        <div class="slider">
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/conjuntoBonecos.png" alt="conjunto com todos os bonecos"> 
+                        <button class="adcSacola">Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Conjunto Todos Bonecos da Turminha</p>
+                            <p class="preco">R$ 250,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/bonecaCaca.png" alt="boneca personahem Caca"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Boneca Personagem Caca</p>
+                            <p class="preco">R$ 40,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/bonecaFlora.png" alt="boneca personagem Flora"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Boneca Personagem Flora</p>
+                            <p class="preco">R$ 40,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/BonecoNeco.png" alt="boneco personagem Neco"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Boneco Personagem Neco</p>
+                            <p class="preco">R$ 40,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/BonecoVanvan.png" alt="boneco personagem Vanvan">
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Boneco Personagem Vanvan</p>
+                            <p class="preco">R$ 40,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/bonecoZeca.png" alt="boneco personagem Zeca"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Boneco Personagem Zeca</p>
+                            <p class="preco">R$ 40,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/trator turminha do agro.png" alt="tratorde brinquedo da turminha"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Trator da turminha</p>
+                            <p class="preco">R$ 60,00</p>        
+            </div>
+
+            <div class="produto" id="p1">
+                <div class="moldura" id="m1"> 
+                    <img src="imagens/capinha para fones.png" alt="capinha para fones"> 
+                        <button class="adcSacola"> Adicionar a sacola</button> 
+                            <button class="detalhesProduto"> <img src="imagens/Icone-infomacao.svg" alt="Icone de detlhes do produto"></button>
+                </div>
+                    <div class="estrelas">estrelas</div>
+                        <p class="nomeProduto">Capinha para Fones de Ouvido </p>
+                            <p class="preco">R$ 35,00 </p>        
+            </div>
+        </div>
+        </div>
+        <button class="botaoPassarProdutos"> <img src="imagens/Icone-proximo.svg" alt=""></button>
+    </div>
+</div>
+    <!--fim carrosel-->
+
+    <!-- Componentes Hover Categaoria-->
+
+    <img id="bonecaHover" src="imagens/bonecaHover.png" alt="">
+
+    <div class="containerCategorias">
+
+        <div class="categorias" id="artigosParaFesta"> <img src="imagens/Icone-balao.png" alt=""> <p> Artigos para Festa</p ></div>
+        <div class="categorias" id="brinquedos"> <img src="imagens/Icone-urso.png" alt=""> <p>Brinquedos</p> </div>
+        <div class="categorias" id="casaDecoracao"> <img src="imagens/Icone-casa.png" alt=""> <p>Casa e Decoracao</p> </div>
+        <div class="categorias" id="livrosDvd"> <img src="imagens/Icone-livros.png" alt=""> <p>Livros e DVD's</p> </div>
+
+    </div>
+
+    <img id="bonecaHover2" src="imagens/bonecaHover.png" alt="">
+
+    <div class="containerPorIdade">
+
+        <div class="idade"> <p> 0 a 1 ano </p> </div>
+        <div class="idade"> <p> 2 a 4 anos </p> </div>
+        <div class="idade"> <p> 5 anos ou + </p> </div>
+         
+    </div>
+
+    <img id="bonecaHover3" src="imagens/boneca-hover-revert.png" alt="">
+
+    <div class="containerEstiloBrincar" >
+
+        <div class="deBrincar"> <p>Construir</p> </div>
+        <div class="deBrincar"> <p>Desafiar</p> </div>
+        <div class="deBrincar"> <p>Desenvolver</p> </div>
+        <div class="deBrincar"> <p>Educar</p> </div>
+        <div class="deBrincar"> <p>Imaginar</p> </div>
+
+    </div>
+
+  <!-- FIM Componentes Hover Categaoria-->
+
+  <!-- inicio redes sociais -->
+
+    <div class="redesSociais">
+        <a href="https://www.youtube.com/@turminhadoagro"> <img src="imagens/youtubeTurminha.png" alt="destaque com nome e logo do spotfy"> </a>
+        <a href="https://open.spotify.com/artist/7yexTxwEgFsZGl3uthXdRO?si=L6a9L8zDQaqhUn_YQQPxmg"> <img src="imagens/sportfyTurminha.png" alt=""> </a>
+        <a href="https://instagram.com/turminhadoagro?igshid=MzRlODBiNWFlZA=="> <img src="imagens/instaTurminha.png" alt=""> </a>
+    </div>
+  
+    <div class="containerVideos">
+        <div class="videos">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/5Mzs1co7Mis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="videos">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/5Mzs1co7Mis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+      <!-- FIM redes sociais -->
+
+    <a id="site" href="#">www.turminhadoagro.com.br</a></div>
+
+      <!-- inicio footer -->
+
+    <div class="rodaPe">
+
+        <div class="linkRodape" id="sobreNos">
+            <P>Sobre Nos</P>
+            <a href="#">Quem Somos</a>
+            <a href="#">Politica de Privacidade</a>
+            <a href="#">Duvidas Sobre a Loja</a>
+        </div>
+
+        <div class="linkRodape">
+            <p>Ajuda e Suporte</p>
+            <a href="#">Perguntas Frequentes</a>
+            <a href="#">Politica de Devolucao</a>
+            <a href="#">Politica de Entrega</a>
+        </div>
+
+        <div id="contatos">
+
+            <div id="whatsapp">
+                <img src="imagens/whatsapp.png" alt="logo whatsapp">
+                <p>Whatsapp:(81) 91234-5678</p>
+            </div>
+
+            <div id="email">
+                <img src="imagens/Icone-email.png" alt="icone email">
+                <p>Email: Turminhadoagro@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div id="meiosPagamento">
+            <p>Meios de Pagamento</p>
+            <div><img src="imagens/icone-pix_1.png" alt="icone pix"></div>
+            <div><img src="imagens/icone-boleto.png" alt="icone boleto bancario"></div>
+            <div><img src="imagens/icone-cartaoDebito.png" alt="icone cartao de debito"></div>
+            <div><img src="imagens/icone-cartao.png" alt="icone cartao credito"></div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" defer src="/script.js"></script>
+</body>
+</html>
