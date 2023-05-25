@@ -1,0 +1,86 @@
+header{
+  width:100%;
+  height:100px;
+  background-image: url("../img/fundoheader.png");
+  background-position: center;
+  background-size:1000px;
+  margin:0px;
+  border:0px;
+  padding:0;
+}
+
+body{
+  background-color: #8E8E8E;
+}
+
+.responsivo{
+  width: 100%;
+  height: auto;
+}
+
+.textoprincipal {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #8E8E8E;
+  font-size: 28px;
+}
+
+.formendereco{
+  
+  font-family: 'Roboto', sans-serif;
+  color: #8E8E8E;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.cep formendereco {
+  width: 120px;
+  height: 47px;
+  left: 19px;
+  top: 73px;
+  margin-left: 20px;
+}
+
+.estado {
+  position: absolute;
+  width: 385px;
+  height: 47px;
+  left: 178px;
+  top: 73px;
+}
+
+.caixaform formendereco {
+  background-color: #E3E3E3;
+  border-radius: 10px;
+}
+
+.subtexto {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #8E8E8E;
+  font-size: 20px;
+}
+
+.campo-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+}
+.campo-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pagsegurologo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+}
+
+  .aligncenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+  }
