@@ -666,13 +666,23 @@ div.deBrincar:hover{
     background-size: 100% 100%;
 }
 
-iframe{
+#youtubeFrame{
     width: 19.9vw;
     height: 26.2vh;
     margin-top: 4.2vh;
     border-radius: 7px;
     overflow: hidden;
 }
+
+.musica{
+    display: inline-flex;
+    width: 25vw; 
+    height: 35vh;
+    align-items: center;
+
+}
+
+
 
 #site{ 
     display: flex;
