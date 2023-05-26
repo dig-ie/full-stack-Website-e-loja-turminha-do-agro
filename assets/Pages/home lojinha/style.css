@@ -2,6 +2,10 @@ body{
    margin: 0;
    overflow-x: hidden;
 }
+.main{
+   display: flex;
+   flex-direction: column; 
+}
 /* ---estilizando header---*/
 
 #header{
@@ -157,10 +161,10 @@ a#estiloDeBrincar{
 }
 
 img#logo{
-    position: absolute;
+    position: relative;
     width: 150px;
     height: 130px;
-    top: 3px;
+    top: -116px;
     left: 45px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
@@ -699,6 +703,12 @@ iframe{
 
 /* -- Estilizando footer--*/
 .rodaPe{
+    height: 26vh;
+    position: relative;
+    padding: initial;
+    box-sizing: initial;
+    width: 1448vw;
+    top: 2301px;
     height: 26vh;
     background-color: #2D6A2E;
 }
