@@ -1,0 +1,671 @@
+*{
+    
+    overflow-x: none;
+}
+body{
+
+    margin: 0;
+    background-color: #f7f7f7;
+    list-style: none;
+}
+
+#header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 18vh;
+    border-bottom: 8px solid rgba(47, 107, 53, 0.8);
+}
+
+#header p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #2D6A2E;
+    margin-left: -40vw;
+}
+
+#logo{
+    margin-left: 2vw;
+    margin-top: 2.5vh;
+}
+
+#logo img{
+    width: 12vw;
+    height: 20vh;
+}
+
+#continuarComprando{
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+    
+}
+
+#continuarComprando a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;;
+    white-space:nowrap;
+}
+
+#continuarComprando img{
+    width: 1vw;
+    height: 3vh;
+    margin-left: 5px;
+}
+
+#container{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 45vw;
+}
+
+/*  estilizando endereco de envio*/
+
+
+.titulos{
+    margin-top: 0.5vh;
+    margin-left: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    white-space:nowrap;
+}
+
+#formularioEndereco{
+
+    width: 40vw;
+    height: 51vh;
+    margin-top: 22vh;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+#formularioEndereco hr{
+    width: 35vw;
+    margin-left: 1vw;
+    margin-top: -3vh;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#formularioInputs{
+    display: block;
+    list-style: none;
+    margin-top: -1vh;
+}
+
+#formularioEndereco li{
+    white-space: nowrap;
+    margin-top: 2.3vh;
+}
+
+#botaoSalvar{
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+    margin-top: 0.5vh;
+    border-radius: 5px;
+    border: none;
+    background-color: #2D6A2E;
+    color: white;
+
+}
+
+.inputs{
+    
+    width: 20vw;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#numeroCasa{
+    width: 10vh;
+    height: 4.5vh;
+    border-radius: 5px;
+    margin-left: 1vw;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#formularioEndereco div{
+    display: none;
+    margin-left: 4vw;
+}
+
+#botaoEditar{
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+    margin-top: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: #A8861A;
+    color: white;
+}
+
+.txtNomeCidade{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.txtInfoEnvio{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*  estilizando itens selecionados*/
+
+#itensSelecionados{
+    margin-top: 10px;
+    width: 40vw;
+    height: 51vh;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerProdutos{
+    width: 30vw;
+    height: 42.8vh;
+    overflow: auto;
+}
+
+#itensSelecionados hr{
+
+    width: 35vw;
+    margin-left: 1vw;
+    margin-top: -3vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.produtosSelecionados{
+    margin-top: 1vh;
+    display: flex;
+
+}
+.imgProduto{
+
+    width: 80px;
+    height: 80px;
+    border: 3px solid #A8861A;
+    margin:1vw;
+    border-radius: 5px;
+}
+
+.imgProduto img{
+    width: 100%;
+    height: 100%;
+}
+
+.nomeProduto{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.quantidade{
+
+    margin-left: -110px;
+    margin-top: 10vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.preco{
+    margin-top: 10vh;
+    margin-left: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F6B35;
+}
+
+#linhaVertical{
+  width: 1px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); 
+  margin-left: 48vw;
+  margin-top: -100vh;
+}
+
+#container2{
+    margin-top: -105vh;
+    margin-left: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: 105vh;
+}
+
+/*  estilizando resumo pedido*/
+
+#resumoPedido{
+
+    width: 40vw;
+    height: 35vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#resumoPedido hr{
+    width: 35vw;
+    margin-left: 1vw;
+    margin-top: -3vh;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#resumoPedido ul{
+    margin-left: -1vw;
+    list-style: none;
+}
+
+#resumoPedido li{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    width: 30vw;
+    margin-top: 1vh;
+    height: 5vh;
+ 
+}
+
+.txtResumoPedido{
+    display: inline-flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.totalPedido{
+    display: inline-flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    white-space: nowrap;
+
+}
+
+/*  estilizando metodos pagamento*/
+
+#metodosPagamento{
+    width: 40vw;
+    height: 65vh;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#tituloMetodos{
+    text-align: center;
+    margin-top: 0.5vh;
+    margin-left: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    white-space:nowrap;
+    
+}
+
+#metodosPagamento ul{
+    margin-top: -1vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoMetodoPagamento{
+    width: 75px;
+    height: 50px;
+    margin-left: 3vw;
+}
+
+.fotoMetodoPagamento img{
+    width: 100%;
+    height: 100%;
+}
+
+#metodosPagamento label{
+    display: flex;
+}
+#metodosPagamento li{
+    margin-left: -1vw;
+
+    margin-top: 2vh;
+    list-style: none;
+    display: flex;
+    align-items:center;
+}
+
+#metodosPagamento li p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 1vw;
+}
+
+#metodosPagamento button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border: none;
+    background-color: #2D6A2E;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f7f7f7;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 260px;
+    height: 10vh;
+    margin: 1.5vh auto;
+}
+
+/* estilizando opcao boleto*/
+
+.fundoEscuro{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+#containerOpcaoBoleto{
+    display: none;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    width: 40vw;
+    height: 45vh;
+    border-radius: 10px;
+}
+
+#containerOpcaoBoleto p{
+    width: 35vw;
+    margin: 5vh auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+}
+
+#containerOpcaoBoleto input{
+    width: 25vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin: -1vh auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);  
+    padding-left: 10px;   
+}
+
+#containerOpcaoBoleto button{
+    cursor: pointer;
+    width: 10vw;
+    height: 5vh;
+    margin: 4vh auto;
+    border: none;
+    background-color: #2D6A2E;
+    color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.iconSair{
+    margin:1.5vw 37vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 4vh;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.iconSair:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.iconSair img{
+    width: 80%;
+    height: 80%;
+}
+
+/* estilizando opcao cartao*/
+
+#containerOpcaoCartao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    width: 40vw;
+    height: 85vh;
+    border-radius: 10px;
+}
+
+#containerOpcaoCartao ul{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+
+#containerOpcaoCartao p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.tituloOpCartao{
+
+    margin-top: 1.5vh;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#txtCartaoDeCredito{
+    margin-left: 1vw;
+}
+
+.iconSair2{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 4vh;
+    margin-right: 1vw;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.iconSair2:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.iconSair2 img{
+    width: 80%;
+    height: 80%;
+}
+#linha1{
+    margin-left: -4vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#linha1 input {
+    margin-top: -1vh;
+    width: 32.5vw;
+    height: 5vh;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    outline-width: 1px;
+}
+
+#linha1 div{
+    width: 3vw;
+    height: 4vh;
+    margin-top: -5vh;
+    margin-left: 27vw;
+}
+
+#linha1 div img{
+    width: 100%;
+    height: 100%;
+}
+
+#linhaTexto{
+    justify-content: space-between;
+    margin-left: -2vw;
+    width: 35vw;
+    list-style: none;
+    display: flex;
+}
+
+#txtCvv{
+    margin-right: 5vw;
+}
+
+#linhaInput{
+    justify-content: space-between;
+    margin-left: -2vw;
+    width: 35vw;
+    list-style: none;
+    display: flex;
+}
+
+.inputVencimento{
+    width: 10vw;
+    height: 5vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.inputCVV{
+    width: 5vw;
+    height: 5vh;
+    margin-right: 3.5vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+#parcelas{
+
+    display: flex;
+    align-items: center;
+    width: 28vw;
+    height: 20vh;
+    list-style: none;
+    margin: 3vh auto;
+    overflow: auto;
+}
+
+#parcelas li{
+    display: flex;
+    justify-content: space-between;
+    width: 29vw;
+    margin-left: -3vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+
+}
+
+#parcelas li div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 10vw;
+    height:8vh;
+}
+
+#confirmarPagamento{
+    background-color: #2D6A2E;
+    color: #f7f7f7;
+    font-size: 18px;
+    width: 15vw;
+    height: 7vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    border-radius: 10px;
+    border: none;
+}
