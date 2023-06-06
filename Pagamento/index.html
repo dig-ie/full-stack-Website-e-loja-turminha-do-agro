@@ -27,11 +27,24 @@
             <P class="titulos">Endereco De Envio</P>
             <hr>
             <ul id="formularioInputs">
-                <li> <input type="text" name="Nome Completo" class="inputs" placeholder="Nome Completo" id="inputNome"> </li>
-                <li> <input type="text" name="CPF" class="inputs" placeholder="CPF: (000.000.000-00)" id="CPF"> </li>
-                <li> <input type="text" name="telefone" class="inputs" placeholder="Telefone: (00 00000-0000)" id="telefone"> </li>
-                <li> <input type="text" name="CEP" class="inputs" placeholder="CEP: (00000-000)" id="CEP"> <input type="text" name="Numero Residencia" id="numeroCasa" placeholder="N. Casa"></li>
-                <li> <input type="text" name="Complemento" class="inputs" placeholder="Complemento" id="complemento"> </li>
+                <li>
+                     <input type="text" name="Nome Completo" class="inputs" placeholder="Nome Completo" id="inputNome" oninput="validandoNome()">
+                     <span class="span-inputs"> O nome deve ter no mínimo 3 carcteres</span>
+                </li>
+                <li>
+                     <input type="text" name="CPF" class="inputs" placeholder="CPF: (000.000.000-00)" id="CPF" oninput="validandoCpf()">
+                     <span class="span-inputs"> O cpf deve ser preenchido corrretamente</span> 
+                </li>
+                <li> 
+                    <input type="text" name="telefone" class="inputs" placeholder="Telefone: (00 00000-0000)" id="telefone" oninput="validandoTelefone()">
+                    <span class="span-inputs"> O telefone deve ser preenchido corretamente</span> 
+                </li>
+                <li>
+                     <input type="text" name="CEP" class="inputs" placeholder="CEP: (00000-000)" id="CEP" oninput="validandoCep()"> 
+                     <input type="text" name="Numero Residencia" id="numeroCasa" placeholder="N. Casa">
+                     <span class="span-inputs"> O Cep deve ser preenchido corretamente </span>
+                </li>
+                <li> <input type="text" name="Complemento" placeholder="Complemento" id="complemento"> </li>
                 <li> <button id="botaoSalvar"> Salvar </button> </li>
             </ul>
 
@@ -128,14 +141,16 @@
                     </li>
                 </ul>
 
-                <button>Confirmar Pagamento</button>
+                <button id="confirmarPagamento">Confirmar Pagamento</button>
 
             </div>
     </div>
 
-    <!-- opcao boleto -->
+    <!-- opcao boleto e cartao de credito -->
 
     <div class="fundoEscuro">
+
+        <!-- opcao boleto -->
 
         <div id="containerOpcaoBoleto">
 
@@ -148,11 +163,7 @@
             <button>Enviar</button>
         </div>
 
-    </div>
-
-    <!-- opcao cartao -->
-
-    <div class="fundoEscuro">
+        <!-- opcao cartao -->
 
         <div id="containerOpcaoCartao">
 
@@ -208,13 +219,15 @@
 
             </ul>
 
-            <button id="confirmarPagamento">Confirmar Pagamento</button>
+            <button id="confirmarPagamentoCredito">Confirmar Pagamento</button>
 
         </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" defer src="script.js"></script>
+    <script src="jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
 
    </body>
 </html>
