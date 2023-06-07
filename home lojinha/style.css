@@ -1,6 +1,7 @@
 body{
    margin: 0;
     overflow-x: hidden;
+    
 
 }
 /* ---estilizando header---*/
@@ -234,6 +235,7 @@ img#logo{
 }
 
 .slideImg img {
+    
     width: 100%;
     height: 100%;
 }
@@ -351,6 +353,7 @@ img#logo{
   }
   
   .botaoVoltarProdutos {
+    cursor: pointer;
     position: absolute;
     margin-top: -2vh;
     z-index: 8;
@@ -366,6 +369,7 @@ img#logo{
   }
   
   .botaoPassarProdutos {
+    cursor: pointer;
     position: absolute;
     margin-left: 91vw;
     margin-top: -42vh;
@@ -391,6 +395,7 @@ img#logo{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: cover;
   }
   
   button.adcSacola {
@@ -424,6 +429,12 @@ img#logo{
     border: none;
     border-radius: 10px;
     transition: 0.5s
+  }
+
+  button.detalhesProduto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   
   button.adcSacola:hover {
@@ -789,6 +800,197 @@ color: #FFFFFF;
 #meiosPagamento div img{
     height: 100%;
     width: 100%;
+}
+
+/* -- Estilizando modal sacola--*/
+
+#fundoEscuro{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70vw;
+    height: 100%;
+    top: 0;
+    z-index: 13;
+}
+
+#modalSacola{
+    display: none;
+    transition: 1.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background-color: #F7F7F7;
+    z-index: 14;
+}
+
+#topoSacola{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+    background-color:#2D6A2E;
+}
+
+#topoSacola p{
+    margin-left: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #F7F7F7;
+}
+
+.produtosSelecionados{
+    margin-top: 5vh;
+    display: flex;
+
+}
+.imgProdutoSacola{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #A8861A;
+    margin:1vw;
+    border-radius: 5px;
+}
+
+.imgProdutoSacola img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nomeProdutoSacola{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+}
+
+.quantidadeProdutoSacola{
+
+    margin-left: -20vw;
+    margin-top: 10vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.precoProdutoSacola{
+    margin-top: 10vh;
+    margin-left: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F6B35;
+}
+
+#botaoLixo{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8vh;
+    margin-left: 9.5vw;
+    width: 25px;
+    height: 25px;
+}
+
+#botoesQuantidade{
+    display: flex;
+    justify-content: space-between;
+    width: 4.5vw;
+    margin-left: 3vw;
+    height: 3.5vh;
+    margin-top:10vh;
+}
+
+#botoesQuantidade button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 23px;
+    height: 23px;
+    font-size: 25px;
+}
+
+#valorSacola{
+    display: flex;
+    margin: 3vh 1vw;
+    width: 16vw;
+    justify-content: space-between;
+}
+
+#subtotalSacola{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#precoSacola{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #2F6B35;
+}
+
+#botaoFinalizarCompra{
+    cursor: pointer;
+    width: 20vw;
+    margin-left: 5vw;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    background-color: #A0572C;
+    color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px;   
+}
+
+#botaoFinalizarCompra:hover{
+    height: 8vh;
+    transition: 1s
+}
+
+#botaoContinuarComprando{
+    cursor: pointer;
+    margin-top: 3vh;
+    width: 20vw;
+    margin-left: 5vw;
+    height: 6vh;
+    border-radius: 15px;
+    border: none;
+    background-color: #2F6B35;
+    color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px; 
+   
+}
+
+#botaoContinuarComprando:hover{
+    height: 8vh;
+    transition: 1s;
 }
     
 @media screen and (max-width: 768px) {

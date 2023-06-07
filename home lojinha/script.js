@@ -184,6 +184,27 @@
         });
     }
 
+    // js modal sacola
+    const botaoSacola = document.getElementById('sacola');
+    const fundoEscuro = document.getElementById('fundoEscuro');
+    const modalSacola = document.getElementById('modalSacola');
+
+    botaoSacola.addEventListener('click', () =>  {
+        document.body.style.overflowY = 'hidden';
+        fundoEscuro.style.display = 'flex';
+        modalSacola.style.display = 'block';
+    });
+
+
+    fundoEscuro.addEventListener('click', () =>{
+        fundoEscuro.style.display = 'none';
+        modalSacola.style.display = 'none';
+        document.body.style.overflowY = 'auto';
+    });
+
+   
+
+    
         
         
         
