@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7AE86547-5054-4322-8352-050CD1376CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulungu.Store.Domain.Entities", "Mulungu.Store.Domain.Entities\Mulungu.Store.Domain.Entities.csproj", "{2616C8BA-E68A-48E2-9A45-D6E094A6F240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{4F76E258-966D-4AAC-8D96-7CD9951101B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulungu.Store.Infra.Repositories.Impl", "Mulungu.Store.Infra.Repositories.Impl\Mulungu.Store.Infra.Repositories.Impl.csproj", "{2498C4E2-B378-444E-91EF-D42CC369330D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulungu.Store.Domain.Contracts", "Mulungu.Store.Domain.Contracts\Mulungu.Store.Domain.Contracts.csproj", "{01462E30-9FFD-41A9-8D29-0DBE96FEAE84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulungu.Store.Domain.Service.Impl", "Mulungu.Store.Domain.Service.Impl\Mulungu.Store.Domain.Service.Impl.csproj", "{B270449A-0F4E-407A-BF63-F42CFF748F53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{95E3C2C2-CD94-45F5-82F9-FC9C62065F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulungu.Store.WebAPI", "Mulungu.Store.WebAPI\Mulungu.Store.WebAPI.csproj", "{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2616C8BA-E68A-48E2-9A45-D6E094A6F240} = {7AE86547-5054-4322-8352-050CD1376CDF}
+		{2498C4E2-B378-444E-91EF-D42CC369330D} = {4F76E258-966D-4AAC-8D96-7CD9951101B5}
+		{01462E30-9FFD-41A9-8D29-0DBE96FEAE84} = {7AE86547-5054-4322-8352-050CD1376CDF}
+		{B270449A-0F4E-407A-BF63-F42CFF748F53} = {7AE86547-5054-4322-8352-050CD1376CDF}
+		{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8} = {95E3C2C2-CD94-45F5-82F9-FC9C62065F97}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2616C8BA-E68A-48E2-9A45-D6E094A6F240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2616C8BA-E68A-48E2-9A45-D6E094A6F240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2616C8BA-E68A-48E2-9A45-D6E094A6F240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2616C8BA-E68A-48E2-9A45-D6E094A6F240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2498C4E2-B378-444E-91EF-D42CC369330D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2498C4E2-B378-444E-91EF-D42CC369330D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2498C4E2-B378-444E-91EF-D42CC369330D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2498C4E2-B378-444E-91EF-D42CC369330D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01462E30-9FFD-41A9-8D29-0DBE96FEAE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01462E30-9FFD-41A9-8D29-0DBE96FEAE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01462E30-9FFD-41A9-8D29-0DBE96FEAE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01462E30-9FFD-41A9-8D29-0DBE96FEAE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B270449A-0F4E-407A-BF63-F42CFF748F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B270449A-0F4E-407A-BF63-F42CFF748F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B270449A-0F4E-407A-BF63-F42CFF748F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B270449A-0F4E-407A-BF63-F42CFF748F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D37D776-DF88-4D78-8F25-F6C3E24FD5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

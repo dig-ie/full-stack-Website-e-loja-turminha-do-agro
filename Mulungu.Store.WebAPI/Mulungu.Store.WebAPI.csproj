@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.16" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Mulungu.Store.Domain.Contracts\Mulungu.Store.Domain.Contracts.csproj" />
+      <ProjectReference Include="..\Mulungu.Store.Domain.Entities\Mulungu.Store.Domain.Entities.csproj" />
+      <ProjectReference Include="..\Mulungu.Store.Domain.Service.Impl\Mulungu.Store.Domain.Service.Impl.csproj" />
+      <ProjectReference Include="..\Mulungu.Store.Infra.Repositories.Impl\Mulungu.Store.Infra.Repositories.Impl.csproj" />
+    </ItemGroup>
+
+</Project>
