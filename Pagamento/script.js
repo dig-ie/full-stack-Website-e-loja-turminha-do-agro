@@ -166,5 +166,35 @@ $(document).ready(function() {
 });
 
 
+function carregarProdutos() {
+  // Recupere a lista de produtos do sessionStorage
+  const produtos = JSON.parse(sessionStorage.getItem("produtos"));
+
+  // Verifique se há produtos para exibir
+  if (produtos && produtos.length > 0) {
+    const listaProdutos = document.querySelector(".listaProdutos");
+
+    // Adicione cada produto à lista
+    produtos.forEach((produto) => {
+      let produtosSelecionados = document.createElement("li");
+
+      produtosSelecionados.innerHTML = `
+        <div class="produtosSelecionados">
+          <div class="imgProdutoSacola"> <img src="${produto.imagem}" alt="${produto.nome}"></div>
+          <p class="nomeProdutoSacola">${produto.nome}</p>
+          <p class="quantidadeProdutoSacola"> Qtd: <span> ${produto.quantidade} </span></p>
+          <p class="precoProdutoSacola data-preco-inical="${produto.preco}"> ${produto.preco} </p>
+        </div>
+      `;
+
+      listaProdutos.append(produtosSelecionados);
+    });
+  }
+}
+
+// Chame a função carregarProdutos quando a página for carregada
+document.addEventListener("DOMContentLoaded", carregarProdutos);
+
+
 
 

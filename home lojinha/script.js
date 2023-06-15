@@ -188,6 +188,7 @@
     const botaoSacola = document.getElementById('sacola');
     const fundoEscuro = document.getElementById('fundoEscuro');
     const modalSacola = document.getElementById('modalSacola');
+    const botaoContinuarComprando = document.querySelector('.botaoContinuarComprando');
 
     botaoSacola.addEventListener('click', () =>  {
         document.body.style.overflowY = 'hidden';
@@ -202,9 +203,159 @@
         document.body.style.overflowY = 'auto';
     });
 
-   
+    botaoContinuarComprando.addEventListener('click', () => {
+        fundoEscuro.style.display = 'none';
+        modalSacola.style.display = 'none';
+        document.body.style.overflowY = 'auto';
+    });
+    // fim modal sacola
 
+    const botaoAdcSacola = document.querySelectorAll('.adcSacola');
+    for(var i =0; i < botaoAdcSacola.length; i++){
+        botaoAdcSacola[i].addEventListener("click", adcProtutoSacola)
+    }
+
+
+    //js adicionando produtos ao carrinho
+    function adcProtutoSacola(event){
+        const botao = event.target
+        const ProdutoMoldura = botao.parentElement
+        const produtoImagem = ProdutoMoldura.querySelector('.imgProduto').src
+        const produtoInformacoes = botao.parentElement.parentElement
+        const produtoNome = produtoInformacoes.querySelector('.nomeProduto').innerText
+        const produtoPreco = produtoInformacoes.querySelector('.preco').innerText
+
+         let produtosSelecionados =  document.createElement('li')
+         
+
+         produtosSelecionados.innerHTML = 
+         `
+         <div class="produtosSelecionados">
+                    <div class="imgProdutoSacola"> <img src="${produtoImagem}" alt="${produtoNome}"></div>
+                    <p class="nomeProdutoSacola">${produtoNome}</p>
+                    
+                    <p class="quantidadeProdutoSacola"> Qtd: <span> 1 </span></p>
+                    <p class="precoProdutoSacola" data-preco-inical="${parseFloat(produtoPreco)}"> ${produtoPreco} </p>
+        </div>
+
+                <div>
+                    <div id="botaoLixo"> <img src="imagens/iconeLixo.png" alt=""> </div>
+                    <div id="botoesQuantidade">
+                        <button class="botaoMais">+</button>
+                        <button class="botaoMenos">-</button>
+                    </div>
+                </div>
+         `
+         const listaProdutos = document.querySelector('.listaProdutos')
+         listaProdutos.append(produtosSelecionados);
+
+         const produto = {
+            imagem: produtoImagem,
+            nome: produtoNome,
+            preco: parseFloat(produtoPreco),
+            quantidade: 1
+          };
+        
+          // Recupere a lista de produtos do localStorage (se houver) ou crie uma lista vazia
+          const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+        
+          // Adicione o produto à lista
+          produtos.push(produto);
+        
+          // Atualize a lista de produtos no localStorage
+          sessionStorage.setItem("produtos", JSON.stringify(produtos));
+
+         atualizarSubtotal();
+         produtosSelecionados.querySelector('#botaoLixo').addEventListener('click', apagarProduto())
+         produtosSelecionados.querySelector('.botaoMais').addEventListener('click', alterarQuantidade())
+         produtosSelecionados.querySelector('.botaoMenos').addEventListener('click', alterarQuantidade())
+         
+
+    }
+
+// js  botoes diminuir e aumentar
     
-        
-        
+function alterarQuantidade() {
+    const botoesMais = document.querySelectorAll('.botaoMais');
+    const botoesMenos = document.querySelectorAll('.botaoMenos');
+
+    botoesMais.forEach((botao, index) => {
+        botao.addEventListener('click', function() {
+            alterarQuantidade(index, 1);
+        });
+    });
+
+    botoesMenos.forEach((botao, index) => {
+        botao.addEventListener('click', function() {
+            alterarQuantidade(index, -1);
+        });
+    });
+
+    function alterarQuantidade(index, valor) {
+        const spansQuantidade = document.querySelectorAll('.quantidadeProdutoSacola span');
+        const precosProduto = document.querySelectorAll('.precoProdutoSacola');
+        let quantidadeAtual = parseInt(spansQuantidade[index].textContent);
+        quantidadeAtual += valor;
+
+        if (quantidadeAtual < 1) {
+            quantidadeAtual = 1;
+        }
+
+        spansQuantidade[index].textContent = quantidadeAtual;
+
+        // Atualizar o preço do produto
+        const precoUnitario = parseFloat(precosProduto[index].data-preco);
+        const novoPreco = (quantidadeAtual * precoUnitario).toFixed(2);
+        precosProduto[index].textContent = 'R$ ' + novoPreco;
+
+        atualizarSubtotal();
+    }
+}
+
+// Chame a função quando o evento 'DOMContentLoaded' for disparado
+document.addEventListener('DOMContentLoaded', alterarQuantidade);
+
+
+    //js para atualizar preco subtotal
+    
+        function atualizarSubtotal() {
+            const precosProduto = document.querySelectorAll('.precoProdutoSacola');
+            let subtotal = 0;
+
+            precosProduto.forEach(preco => {
+                subtotal += parseFloat(preco.textContent.replace('R$', '').trim());
+            });
+
+            const elementoSubtotal = document.querySelector('#precoSacola');
+            elementoSubtotal.textContent = 'R$' + subtotal.toFixed(2);
+        }
+
+        // Atualizar o subtotal inicial
+        atualizarSubtotal();
+
+
+         // excluindo produto do carrinho 
+
+        function apagarProduto(){
+    const botaoRemover = document.querySelectorAll('#botaoLixo');
+    const elementoSubtotal = document.querySelector('#precoSacola');
+
+    for (var i = 0; i < botaoRemover.length; i++) {
+    botaoRemover[i].addEventListener("click", function remove(event) {
+        const produto = event.target.parentElement.parentElement.parentElement;
+        const precoProduto = parseFloat(produto.querySelector('.precoProdutoSacola').textContent.replace('R$', '').trim());
+
+        produto.remove();
+
+        const subtotalAtual = parseFloat(elementoSubtotal.textContent.replace('R$', '').trim());
+        const novoSubtotal = subtotalAtual - precoProduto;
+
+        elementoSubtotal.textContent = 'R$' + novoSubtotal.toFixed(2);
+
+        });
+    }
+}
+
+       
+
         

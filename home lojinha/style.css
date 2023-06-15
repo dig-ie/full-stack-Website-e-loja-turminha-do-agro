@@ -820,17 +820,19 @@ color: #FFFFFF;
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 450px;
     height: 100vh;
     background-color: #F7F7F7;
     z-index: 14;
+    overflow: auto;
 }
 
 #topoSacola{
+    position: fixed;
     display: flex;
     align-items: center;
-    width: 30vw;
-    height: 10vh;
+    width: 450px;
+    height: 70px;
     background-color:#2D6A2E;
 }
 
@@ -842,11 +844,26 @@ color: #FFFFFF;
     color: #F7F7F7;
 }
 
-.produtosSelecionados{
-    margin-top: 5vh;
-    display: flex;
+#modalSacola ul{
+    margin-top: 13vh;
 
 }
+#modalSacola li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 150px;
+    margin-top: 2vh;
+    margin-left: -25px;
+}
+
+.produtosSelecionados{
+    width: 300px;
+    height: 120px;
+    margin-left: -40px;
+}
+
 .imgProdutoSacola{
     width: 80px;
     height: 80px;
@@ -862,8 +879,8 @@ color: #FFFFFF;
 }
 
 .nomeProdutoSacola{
-    margin-left: 1vw;
-    margin-top: 1.5vh;
+    margin-left: 120px;
+    margin-top: -105px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -873,9 +890,8 @@ color: #FFFFFF;
 }
 
 .quantidadeProdutoSacola{
-
-    margin-left: -20vw;
-    margin-top: 10vh;
+    margin-left: 120px;
+    margin-top: 38px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -884,8 +900,8 @@ color: #FFFFFF;
 }
 
 .precoProdutoSacola{
-    margin-top: 10vh;
-    margin-left: 3vw;
+    margin-left: 190px;
+    margin-top: -45px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -900,19 +916,19 @@ color: #FFFFFF;
     border: none;
     display: flex;
     justify-content: center;
-    margin-top: 1.8vh;
-    margin-left: 9.5vw;
     width: 25px;
     height: 25px;
+    margin-left: 56px;
+    margin-top: -10px;
 }
 
 #botoesQuantidade{
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 4.5vw;
-    margin-left: 3vw;
     height: 3.5vh;
-    margin-top:10vh;
+    margin-top: 45px;
+    margin-left: 20px;
 }
 
 #botoesQuantidade button{
@@ -921,8 +937,6 @@ color: #FFFFFF;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 24px;
-    height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -933,7 +947,8 @@ color: #FFFFFF;
 
 #valorSacola{
     display: flex;
-    margin: 3vh 1vw;
+    margin-left: 2vw;
+    margin-top: -1vh;
     width: 16vw;
     justify-content: space-between;
 }
@@ -953,34 +968,36 @@ color: #FFFFFF;
     color: #2F6B35;
 }
 
-#botaoFinalizarCompra{
+.botaoFinalizarCompra{
     cursor: pointer;
-    width: 20vw;
+    width: 270px;
+    height: 50px;
     margin-left: 5vw;
-    height: 6vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 15px;
     border: none;
-    background-color: #A0572C;
+    background-color: #2F6B35;
     color: #F7F7F7;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 22px;   
 }
 
-#botaoFinalizarCompra:hover{
+.botaoFinalizarCompra:hover{
     height: 8vh;
     transition: 1s
 }
 
-#botaoContinuarComprando{
+.botaoContinuarComprando{
     cursor: pointer;
     margin-top: 3vh;
-    width: 20vw;
+    width: 270px;
     margin-left: 5vw;
-    height: 6vh;
+    height: 50px;
     border-radius: 15px;
     border: none;
-    background-color: #2F6B35;
+    background-color: #A0572C;
     color: #F7F7F7;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
@@ -988,7 +1005,7 @@ color: #FFFFFF;
    
 }
 
-#botaoContinuarComprando:hover{
+.botaoContinuarComprando:hover{
     height: 8vh;
     transition: 1s;
 }
