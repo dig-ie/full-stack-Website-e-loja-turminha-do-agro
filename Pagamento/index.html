@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+
+    <header id="header">
+
+        <div id="logo"> <img src="imagens/Logo.png" alt="logo turminha do agro"></div>
+
+        <p>Pagamento</p>
+        
+        <div id="continuarComprando"> <a href="#"> continuar comprando </a> <img src="imagens/icone-voltar.png" alt=""></div>
+    </header>
+
+    <!-- formulario de envio produtos -->
+
+    <div id="container">
+        
+        <div id="formularioEndereco">
+
+            <P class="titulos">Endereco De Envio</P>
+            <hr>
+            <ul id="formularioInputs">
+                <li>
+                     <input type="text" name="Nome Completo" class="inputs" placeholder="Nome Completo" id="inputNome" oninput="validandoNome()">
+                     <span class="span-inputs"> O nome deve ter no mínimo 3 carcteres</span>
+                </li>
+                <li>
+                     <input type="text" name="CPF" class="inputs" placeholder="CPF: (000.000.000-00)" id="CPF" oninput="validandoCpf()">
+                     <span class="span-inputs"> O cpf deve ser preenchido corrretamente</span> 
+                </li>
+                <li> 
+                    <input type="text" name="telefone" class="inputs" placeholder="Telefone: (00 00000-0000)" id="telefone" oninput="validandoTelefone()">
+                    <span class="span-inputs"> O telefone deve ser preenchido corretamente</span> 
+                </li>
+                <li>
+                     <input type="text" name="CEP" class="inputs" placeholder="CEP: (00000-000)" id="CEP" oninput="validandoCep()"> 
+                     <input type="text" name="Numero Residencia" id="numeroCasa" placeholder="N. Casa">
+                     <span class="span-inputs"> O Cep deve ser preenchido corretamente </span>
+                </li>
+                <li> <input type="text" name="Complemento" placeholder="Complemento" id="complemento"> </li>
+                <li> <button id="botaoSalvar"> Salvar </button> </li>
+            </ul>
+
+            <div id="infoEnvio">
+                <p class="txtNomeCidade" id="nomeCompleto">Pedro Henrrique Santos</p>
+                <p class="txtInfoEnvio" id="numTelefone">81(9000-0000)</p>
+                <p class="txtNomeCidade" id="Cidade">Recife - Pernambuco</p>
+                <p class="txtInfoEnvio" id="Rua">R.Samuel de Farias, 104</p>
+                <p class="txtInfoEnvio" id="numCep">00000-000</p>
+                <p class="txtInfoEnvio" id="txtComplemento">S/complemento</p>
+                <button id="botaoEditar">Editar</button>
+            </div>
+          
+        </div>
+
+        <div id="itensSelecionados">
+            <p class="titulos">Itens Selecionados</p>
+            <hr>
+
+            <div id="containerProdutos">
+                <ul class="listaProdutos">
+
+                
+
+                </ul>  
+                </div>
+            </div>
+        </div>
+
+        <div id="linhaVertical"> </div>
+
+    </div>
+
+    <!-- resumo do pedido e metodos pagamento -->
+
+    <div id="container2">
+
+            <div id="resumoPedido">
+                <p class="titulos">Resumo do pedido</p>
+                <hr>
+                <ul>
+                    <li> <p class="txtResumoPedido">Subtotal:</p>  <p class="txtResumoPedido">R$ 269,70</p> </li>
+                    <li> <p class="txtResumoPedido">Taxa De Envio:</p> <p class="txtResumoPedido">R$ 20,30</p> </li>
+                    <li> <p class="totalPedido">Total Do Pedido:</p> <p class="totalPedido">R$ 290,00</p> </li>
+                </ul>
+                
+            </div>
+
+            <div id="metodosPagamento">
+
+                <p id="tituloMetodos">Metodos De Pagamento</p>
+                <ul>
+                    <li>
+                         <input type="radio" name="metodoPagamento" id="pix"> 
+                         <label for="pix">
+                            <div class="fotoMetodoPagamento" > <img src="imagens/icone-pix_1.png" alt="icone pix"> </div>
+                            <p>Pix</p> 
+                        </label>
+                    </li>
+
+                    <li> <input type="radio" name="metodoPagamento" id="boleto">
+                         <label for="boleto">
+                            <div class="fotoMetodoPagamento"> <img src="imagens/icone-boleto.png" alt="icone boleto bancario"> </div>
+                            <p>Boleto Bancario </p> 
+                         </label>
+                    </li>
+
+                    <li> <input type="radio" name="metodoPagamento" id="cartaoCredito">
+                        <label for="cartaoCredito">
+                            <div class="fotoMetodoPagamento"> <img src="imagens/icone-cartao.png" alt="icone cartao de credito"> </div> 
+                            <p> Cartao De Credito</p> 
+                        </label>
+                    </li>
+
+                    <li> <input type="radio" name="metodoPagamento" id="cartaoDebito">
+                        <label for="cartaoDebito">
+                            <div class="fotoMetodoPagamento"> <img src="imagens/icone-cartaoDebito.png" alt="Icone cartao de debito"> </div> 
+                            <p> Cartao De Debito</p>
+                        </label>
+                    </li>
+                </ul>
+
+                <button id="confirmarPagamento">Confirmar Pagamento</button>
+
+            </div>
+    </div>
+
+    <!-- opcao boleto e cartao de credito -->
+
+    <div class="fundoEscuro">
+
+        <!-- opcao boleto -->
+
+        <div id="containerOpcaoBoleto">
+
+            <div class="iconSair"> <img src="imagens/Icone-sair.png" alt="icone x indicando saida"> </div>
+
+            <p>Por favor, digite seu email para envio do boleto bancario</p>
+
+            <input type="text" name="Email" id="Email" placeholder="Email">
+
+            <button>Enviar</button>
+        </div>
+
+        <!-- opcao cartao -->
+
+        <div id="containerOpcaoCartao">
+
+            <div class="tituloOpCartao">
+                <p id="txtCartaoDeCredito">Cartao De Credito</p>
+                <div class="iconSair2"> <img src="imagens/Icone-sair.png" alt="icone x indicando saida"></div>
+            </div>
+
+            <ul>
+                <li id="linha1"> 
+                    <p id="txtNCartao">N. Cartao:</p>
+                    <input type="text" name="numero cartao" class="numeroCartao" placeholder="0000 0000 0000 0000"> 
+                    <div id="imgCartao"> <img src="imagens/icone-cartao-cinza.png" alt="cartao cinza"></div> 
+                </li>
+
+                <li id="linhaTexto">
+                    <p>Data de Vencimento:</p>
+                    <p id="txtCvv">CVV:</p>
+                </li>
+
+                <li id="linhaInput">
+                    <input type="text" name="data de vencimento" class="inputVencimento" placeholder="00/00">
+                    <input type="text" name="CVV" class="inputCVV" placeholder="000">
+                </li>
+            </ul>
+
+            <ul id="parcelas">
+
+                <li id="linha1parcelas">
+                    <div>1x de 00,00</div>
+                    <div>2x de 00,00</div>
+                </li>
+
+                <li id="linha2parcelas">
+                    <div>3x de 00,00</div>
+                    <div>4x de 00,00</div>
+                </li>
+
+                <li id="linha3parcelas">
+                    <div>5x de 00,00</div>
+                    <div>6x de 00,00</div>
+                </li>
+
+                <li id="linha4parcelas">
+                    <div>7x de 00,00</div>
+                    <div>8x de 00,00</div>
+                </li>
+
+                <li id="linha5parcelas">
+                    <div>9x de 00,00</div>
+                    <div>10x de 00,00</div>
+                </li>
+
+            </ul>
+
+            <button id="confirmarPagamentoCredito">Confirmar Pagamento</button>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" defer src="script.js"></script>
+    <script src="jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+
+   </body>
+</html>

@@ -1,0 +1,1094 @@
+body{
+   margin: 0;
+    overflow-x: hidden;
+    
+
+}
+/* ---estilizando header---*/
+
+#header{
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+}
+#topo1{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    background-color: #2D6A2E;
+    height: 10vh;
+}
+
+#containerInput{
+    margin-left: 3.5vw;
+    display: flex;
+    align-items: center;
+
+}
+
+input#pesquisa{
+    width:23vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18.75px;
+    color: rgba(0, 0, 0, 0.41);
+    padding-left: 20px;
+}
+
+input#pesquisa:focus{
+    outline-color: gray;
+}
+button#pesquisaIcon{
+    margin-left: -3.5vw;
+    display:flex;
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+#menuMobile{
+    display: none;
+}
+
+p#fraseloja{
+
+    width: 106px;
+    height: 37px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+div#login{
+    align-items: center;
+    
+    display: flex;
+    width: 108px;
+    height: 37px;
+}
+
+a#entrecadastre-se{
+    width: 126px;
+    left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+img#usericon{
+    height: 4vh;
+}
+
+div#sacola{
+    margin-right: 5vw;
+    align-items: center, baseline;
+    cursor: pointer;
+    display: flex;
+    width: 58px;
+    height: 49px;
+ 
+}
+
+#sacola img{
+    cursor: pointer;
+    height: 49px;
+    left: 12px;
+}
+div#contador{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.5vw;
+    background: rgba(235, 232, 219, 0.91);;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    color: #A8861A;
+}
+
+div#topo2{
+    margin-top: 10vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #61B134;
+    opacity: 0.9;
+    height: 8vh;
+}
+
+nav#menu{
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+nav#menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+a.txtbranco{
+    margin-left: 5vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+a.txtbranco:hover{
+    color: #2D6A2E;
+
+}
+
+a#estiloDeBrincar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5vw;
+    padding: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2D6A2E;
+}
+
+.logo{
+    position: relative;
+    right: -2.5vw;    
+    display: flex;
+}
+img#logo{
+    width:12vw;
+    height: 20vh;
+   
+}
+
+#lista{
+    background-color:#61B134;
+    height: 2px;
+}
+
+#containerInputMobile{
+    display: none;
+}
+
+/* --- FIM header---*/
+
+/* --- Inicio slider imagens---*/
+
+.sliderImagens {
+    margin-top: 17.9vh;
+    width: 98.8vw;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slidesImagens {
+    width: 400%;
+    height: 50vh;
+    display: flex;
+    transition: 1s;
+}
+
+.slidesImagens input {
+    display: none;
+}
+
+.slideImg{
+    cursor: pointer;
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slideImg img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao {
+    width: 98vw;
+    height: 4vh;
+    margin-top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.navegacao label {
+    display: flex;
+    background-color: #F7F7F7;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #2D6A2E;
+    border-radius: 90px;
+    transition: 1s;
+}
+
+.botaoNavegacao:hover {
+    background-color: #2D6A2E;
+}
+
+.navegacao label:not(:last-child) {
+    margin-right: 2vw;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio1:checked ~ .navegacao .botaoNavegacao1{
+    background-color: #2D6A2E;
+}
+
+#radio2:checked ~ .navegacao .botaoNavegacao2{
+    background-color: #2D6A2E;
+}
+
+#radio3:checked ~ .navegacao .botaoNavegacao3{
+    background-color: #2D6A2E;
+}
+
+#radio4:checked ~ .navegacao .botaoNavegacao4{
+    background-color: #2D6A2E;
+}
+
+/* --- FIM slider imagens---*/
+
+.destaques{
+    display: flex;
+    margin: 5vh auto;
+    justify-content: center;
+}
+
+/* -- Estilizando produtos e carrosel--*/
+
+.carroselProdutos {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+  }
+  
+  .containerSlider {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    margin-top: -39vh;
+    width: 95%;
+    margin-left: 3.5vw;
+    background-color: transparent;
+    align-items: center;
+  }
+  
+  .slider {
+    position: absolute;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 97%;
+  }
+  
+  
+  .slide {
+    display: flex;
+    width: 200%;
+  }
+  
+  .produto {
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+    margin-right: 3vw;
+    scroll-snap-align: start;
+
+  }
+  
+  .botaoVoltarProdutos {
+    cursor: pointer;
+    position: absolute;
+    margin-top: -2vh;
+    z-index: 8;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .botaoVoltarProdutos img {
+    height: 30px;
+  }
+  
+  .botaoPassarProdutos {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 91vw;
+    margin-top: -42vh;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .botaoPassarProdutos img {
+    height: 30px;
+  }
+  
+  div.moldura {
+    height: 250px;
+    width: 270px;
+    border: 3px solid #A8861A;
+    border-radius: 10px;
+  }
+
+  div.moldura img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  button.adcSacola {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: #E0B916;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: -260px;
+    font-family: system-ui, --, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: 0.5s;
+   
+  }
+  
+  button.detalhesProduto {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    margin-left: -70px;
+    margin-top: 200px;
+    background-color: #C69F13;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s
+  }
+
+  button.detalhesProduto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  button.adcSacola:hover {
+    background-color: rgba(97, 177, 52, 0.9);
+  }
+  
+  button.detalhesProduto:hover {
+    background-color: rgba(97, 177, 52, 0.9);
+  }
+  
+  div.estrelas {
+    margin-top: 10px;
+    margin-left: 38%;
+    display: inline-block;
+    background-color: #A8861A;
+  }
+  
+  p.nomeProduto {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  p.preco {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 8px;
+    color: #2D6A2E;
+    margin-left: 85px;
+  }
+  
+
+/* -- Estilizando container categorias hover--*/
+
+div.containerCategorias{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 30vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+img#bonecaHover{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 36vw;
+    height: 43px;
+    z-index: 12;
+}
+
+div.categorias{
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content:flex-end;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 7vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+div.categorias img{
+    padding: 1vh;
+}
+
+div.categorias:hover {
+    background-color: #E0B916;
+    color: #F7F7F7;
+}
+
+div#artigosParaFesta{
+   
+    margin-top: 4vh;
+    margin-left: 1.5vw;
+    
+}
+
+div#brinquedos{
+    margin-top: 4vh;
+    margin-left: 18vw;
+}
+
+div#casaDecoracao{
+    margin-top: 17vh;
+    margin-left: 1.5vw;
+}
+
+div#livrosDvd{
+    margin-top: 17vh;
+    margin-left: 18vw;
+}
+
+img#bonecaHover2{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 52vw;
+    height: 43px;
+    z-index: 12;
+}
+
+div.containerPorIdade{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 50vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.idade{
+    cursor: pointer;
+    margin-left: 1.5vw;
+    margin-top:2vh;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 6vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.idade:hover{
+    background-color:#E0B916;
+    color: #F7F7F7;
+}
+
+
+img#bonecaHover3{
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 80vw;
+    height: 43px;
+    z-index: 12;
+}
+
+div.containerEstiloBrincar{
+    display: none;
+    position: fixed;
+    top: 20vh;
+    margin-left: 50vw;
+    width: 33vw;
+    height: 30vh;
+    background: #F7F7F7;
+    border: 3px solid #A8861A;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+div.deBrincar{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 1.5vw;
+    margin-top:2vh;
+    border: 3px solid #E0B916;
+    border-radius: 15px;
+    width: 13vw;
+    height: 6vh;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.deBrincar:hover{
+    background-color: #E0B916;
+    color: #F7F7F7;
+}
+
+
+/* -- FIM Estilizando container categorias hover--*/
+
+
+.redesSociais{
+    display: flex;
+    height: 35vh;
+    margin-left: 5vw;
+    flex-direction: column;
+    width: 22vw;
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+.redesSociais img{
+    cursor: pointer;
+    height: 12vh;
+    width: 22vw;
+}
+
+.redesSociais img:hover{
+    transition: 1s;
+    height: 14vh;
+}
+
+.containerVideos{
+    display: flex;
+    margin-left: 35vw;
+    margin-top: -35vh;
+    margin-bottom: -10vh;
+}
+
+.videos{
+    justify-content: center;
+    background-image: url(imagens/fundovideo.png);
+    margin-right: 3vw;
+    display: inline-flex;
+    width: 25vw; 
+    height: 35vh;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#youtubeFrame{
+    width: 19.9vw;
+    height: 26.2vh;
+    margin-top: 4.2vh;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.musica{
+    display: inline-flex;
+    width: 25vw; 
+    height: 35vh;
+    align-items: center;
+
+}
+
+
+
+#site{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #2F6B35;
+}
+
+/* -- Estilizando footer--*/
+.rodaPe{
+    display: flex;
+    justify-content: space-between;
+    height: 26vh;
+    background-color: #2D6A2E;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.linkRodape{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10vw;
+    height: 24.5vh;
+}
+
+.linkRodape p{
+width: 20vw;
+height: 1vh;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+color: #FFFFFF;
+}
+
+.linkRodape a{
+text-decoration: none;
+margin-top: 2vh;
+width: 17vw;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #FFFFFF;
+}
+
+#sobreNos{
+    margin-left: 3vw;
+}
+
+#contatos{ 
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    width: 25vw;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+#contatos div{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+#contatos p{
+    margin-left: 1vw;
+}
+
+#meiosPagamento{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+#meiosPagamento div{
+    border-radius: 10px;
+    display: inline-flex;
+    background-color: #F7F7F7;
+    width: 4vw;
+    height: 5vh;
+    margin: 1vw;
+}
+
+#meiosPagamento div img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -- Estilizando modal sacola--*/
+
+#fundoEscuro{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70vw;
+    height: 100%;
+    top: 0;
+    z-index: 13;
+}
+
+#modalSacola{
+    display: none;
+    transition: 1.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100vh;
+    background-color: #F7F7F7;
+    z-index: 14;
+    overflow: auto;
+}
+
+#topoSacola{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 70px;
+    background-color:#2D6A2E;
+}
+
+#topoSacola p{
+    margin-left: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #F7F7F7;
+}
+
+#modalSacola ul{
+    margin-top: 13vh;
+
+}
+#modalSacola li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 150px;
+    margin-top: 2vh;
+    margin-left: -25px;
+}
+
+.produtosSelecionados{
+    width: 300px;
+    height: 120px;
+    margin-left: -40px;
+}
+
+.imgProdutoSacola{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #A8861A;
+    margin:1vw;
+    border-radius: 5px;
+}
+
+.imgProdutoSacola img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nomeProdutoSacola{
+    margin-left: 120px;
+    margin-top: -105px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    white-space: nowrap;
+}
+
+.quantidadeProdutoSacola{
+    margin-left: 120px;
+    margin-top: 38px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.precoProdutoSacola{
+    margin-left: 190px;
+    margin-top: -45px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F6B35;
+}
+
+#botaoLixo{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 56px;
+    margin-top: -10px;
+}
+
+#botoesQuantidade{
+    display: none;
+    justify-content: space-between;
+    width: 4.5vw;
+    height: 3.5vh;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+#botoesQuantidade button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 23px;
+    height: 23px;
+    font-size: 25px;
+}
+
+#valorSacola{
+    display: flex;
+    margin-left: 2vw;
+    margin-top: -1vh;
+    width: 16vw;
+    justify-content: space-between;
+}
+
+#subtotalSacola{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#precoSacola{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #2F6B35;
+}
+
+.botaoFinalizarCompra{
+    cursor: pointer;
+    width: 270px;
+    height: 50px;
+    margin-left: 5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2F6B35;
+    color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px;   
+}
+
+.botaoFinalizarCompra:hover{
+    height: 8vh;
+    transition: 1s
+}
+
+.botaoContinuarComprando{
+    cursor: pointer;
+    margin-top: 3vh;
+    width: 270px;
+    margin-left: 5vw;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #A0572C;
+    color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px; 
+   
+}
+
+.botaoContinuarComprando:hover{
+    height: 8vh;
+    transition: 1s;
+}
+    
+@media screen and (max-width: 768px) {
+
+    img#logo{
+        margin-left: 4vw;
+        width: 20vw;
+        height: 20vh;
+    }
+
+    input#pesquisa{
+        display: none;
+    }
+    button#pesquisaIcon{
+        display: none;
+    }
+    
+    div#login{
+        display: none;
+    }
+
+    nav#menu{
+       display: none;
+    }
+
+    p#fraseloja{
+    
+        margin-top: 1.7vh;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    #menuMobile{
+        display: flex;
+        width: 4vw;
+        height: 4vh;
+    }
+
+    #menuMobile img{
+        width: 100%;
+        height: 100%;
+    }
+
+    div#sacola{
+        margin-right: 12vw;
+        height: 45px;
+    }
+
+    div#sacola img{
+        height: 100%;
+    }
+
+    #containerInputMobile{
+        display: flex;
+    }
+
+    #containerInputMobile button{
+        height: 1vh;
+        border: none;
+        margin-left: -7vw;
+        border-radius: 20px;
+    
+    }
+
+    #pesquisaMobile{
+        border: none;
+        border-radius: 20px;
+        margin-left: 35vw;
+        width: 55vw;
+        height: 4vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18.75px;
+        color: rgba(0, 0, 0, 0.41);
+        padding-left: 20px;
+    }
+
+    .carroselProdutos{
+        margin-top: 54vh;
+    }
+
+
+}
